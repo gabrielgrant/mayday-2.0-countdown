@@ -1,0 +1,6 @@
+RewriteEngine on
+RewriteCond %{REQUEST_URI} !^/$
+RewriteCond %{REQUEST_URI} !/sand.gif$
+RewriteCond %{REQUEST_URI} !/sand.static.gif$
+RewriteCond %{REQUEST_URI} !/countdown.min.js$
+RewriteRule ^(.*)$ http://mayday.us/$1 [L,R=302]
